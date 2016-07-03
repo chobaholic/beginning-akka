@@ -7,6 +7,6 @@ public class Main {
         ActorSystem actorSystem = ActorSystem.create("TestSystem");
         ActorRef ping = actorSystem.actorOf(Props.create(PingActor.class), "pingActor");
 
-        ping.tell("start", ActorRef.noSender());
+        ping.tell("work", ActorRef.noSender());
     }
 }
